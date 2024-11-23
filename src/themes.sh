@@ -94,21 +94,8 @@ case $SELECTED_THEME in
     ["surface0"]="#313244"
     ["yellow"]="#f9e2af"
 
-    ["bblack"]="#313244"
-    ["bblue"]="#7aa2f7"
-    ["bcyan"]="#7dcfff"
-    ["bgreen"]="#41a6b5"
-    ["bmagenta"]="#bb9af7"
-    ["bred"]="#ff9e64"
-    ["bwhite"]="#787c99"
-    ["byellow"]="#e0af68"
   )
   ;;
 esac
-
-THEME['ghgreen']="#a6e3a1" # Mocha Green
-THEME['ghmagenta']="#eba0ac" # Mocha Maroon
-THEME['ghred']="#f38ba8" # Mocha Red
-THEME['ghyellow']="#f9e2af" # Mocha Yellow
 
 RESET="#[fg=${THEME[foreground]},bg=${THEME[background]},nobold,noitalics,nounderscore,nodim]"
