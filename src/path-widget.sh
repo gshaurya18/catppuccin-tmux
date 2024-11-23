@@ -7,7 +7,7 @@ ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/.."
 # get value from tmux config
 SHOW_PATH=$(tmux show-option -gv @catppuccin-tmux_show_path 2>/dev/null)
 PATH_FORMAT=$(tmux show-option -gv @catppuccin-tmux_path_format 2>/dev/null) # full | relative
-RESET="#[fg=brightwhite,bg=#15161e,nobold,noitalics,nounderscore,nodim]"
+RESET="#[fg=text,bg=base,nobold,noitalics,nounderscore,nodim]"
 
 # check if not enabled
 if [ "${SHOW_PATH}" != "1" ]; then
@@ -23,4 +23,4 @@ if [[ ${PATH_FORMAT} == "relative" ]]; then
   current_path="$(echo ${current_path} | sed 's#'"$HOME"'#~#g')"
 fi
 
-echo "#[fg=blue,bg=default] ${RESET}#[bg=default]${current_path} "
+echo "#[fg=blue,bg=base] ${RESET}#[bg=base]${current_path} "

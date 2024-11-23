@@ -79,17 +79,17 @@ case $SELECTED_THEME in
 *)
   # Default to mocha theme
   declare -A THEME=(
-    ["background"]="#1e1e2e" # Base
-    ["foreground"]="#9399b2" # Overlay 2
-    ["black"]="#cdd6f4" # Text
-    ["blue"]="#89b4fa" # Blue
-    ["cyan"]="#89dceb" # Sky
+    ["base"]="#1e1e2e"
+    ["overlay2"]="#9399b2"
+    ["text"]="#cdd6f4"
+    ["blue"]="#89b4fa"
+    ["sky"]="#89dceb"
     ["green"]="#a6e3a1"
-    ["magenta"]="#f5c2e7"
+    ["pink"]="#f5c2e7"
     ["rosewater"]="#f5e0dc"
     ["lavender"]="#b4befe"
     ["red"]="#f38ba8"
-    ["white"]="#11111b"
+    ["subtext1"]="#11111b"
     ["yellow"]="#f9e2af"
 
     ["bblack"]="#313244"

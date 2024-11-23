@@ -15,10 +15,10 @@ CURRENT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 source $CURRENT_DIR/themes.sh
 
 ACCENT_COLOR="${THEME[blue]}"
-SECONDARY_COLOR="${THEME[background]}"
-BG_COLOR="${THEME[background]}"
-BG_BAR="${THEME[background]}"
-TIME_COLOR="${THEME[black]}"
+SECONDARY_COLOR="${THEME[base]}"
+BG_COLOR="${THEME[base]}"
+BG_BAR="${THEME[base]}"
+TIME_COLOR="${THEME[subtext1]}"
 
 if [[ $1 =~ ^[[:digit:]]+$ ]]; then
   MAX_TITLE_WIDTH=$1
@@ -105,7 +105,7 @@ if [ "${#OUTPUT}" -ge $MAX_TITLE_WIDTH ]; then
 fi
 
 if [ -z "$OUTPUT" ]; then
-  echo "$OUTPUT #[fg=green,bg=default]"
+  echo "$OUTPUT #[fg=green,bg=base]"
 else
   OUT="$OUTPUT $TIME "
   ONLY_OUT="$OUTPUT "

@@ -13,7 +13,7 @@ fi
 # Get values from tmux config or set defaults
 BATTERY_NAME=$(tmux show-option -gv @catppuccin-tmux_battery_name 2>/dev/null)
 BATTERY_LOW=$(tmux show-option -gv @catppuccin-tmux_battery_low_threshold 2>/dev/null)
-RESET="#[fg=brightwhite,bg=#15161e,nobold,noitalics,nounderscore,nodim]"
+RESET="#[fg=text,bg=background,nobold,noitalics,nounderscore,nodim]"
 
 DISCHARGING_ICONS=("󰁺" "󰁻" "󰁼" "󰁽" "󰁾" "󰁿" "󰂀" "󰂁" "󰂂" "󰁹")
 CHARGING_ICONS=("󰢜" "󰂆" "󰂇" "󰂈" "󰢝" "󰂉" "󰢞" "󰂊" "󰂋" "󰂅")
@@ -113,12 +113,12 @@ esac
 
 # Set color based on battery percentage
 if [[ $BATTERY_PERCENTAGE -lt $BATTERY_LOW ]]; then
-  color="#[fg=red,bg=default,bold]"
+  color="#[fg=red,bg=background,bold]"
 elif [[ $BATTERY_PERCENTAGE -ge 100 ]]; then
-  color="#[fg=green,bg=default]"
+  color="#[fg=green,bg=background]"
 else
-  color="#[fg=yellow,bg=default]"
+  color="#[fg=yellow,bg=background]"
 fi
 
 # Print the battery status with some extra spaces for padding
-echo "${color} ${ICON}${RESET} #[bg=default] ${BATTERY_PERCENTAGE}% "
+echo "${color} ${ICON}${RESET} #[bg=background] ${BATTERY_PERCENTAGE}% "
