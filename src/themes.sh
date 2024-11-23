@@ -5,74 +5,59 @@ SELECTED_THEME="$(tmux show-option -gv @tokyo-night-tmux_theme)"
 case $SELECTED_THEME in
 "latte")
   declare -A THEME=(
-    ["background"]="#24283b" # Base
-    ["foreground"]="#8c8fa1" # Overlay 2
-    ["black"]="#4c4f69" # Text
-    ["blue"]="#1e66f5" # Blue
-    ["cyan"]="#04a5e5" # Sky
-    ["green"]="#40a02b" # Green
-    ["magenta"]="#ea76cb" # Pink
-    ["red"]="#d20f39" # Red
-    ["white"]="#dce0e8" # Crust
-    ["yellow"]="#df8e1d" # Yellow
-
-    ["bblack"]="#414868"
-    ["bblue"]="#7aa2f7"
-    ["bcyan"]="#7dcfff"
-    ["bgreen"]="#41a6b5"
-    ["bmagenta"]="#bb9af7"
-    ["bred"]="#f7768e"
-    ["bwhite"]="#787c99"
-    ["byellow"]="#e0af68"
+    ["base"]="#eff1f5"
+    ["overlay2"]="#7c7f93"
+    ["text"]="#4c4f69"
+    ["blue"]="#1e66f5"
+    ["sky"]="#04a5e5"
+    ["green"]="#40a02b"
+    ["pink"]="#ea76cb"
+    ["rosewater"]="#dc8a78"
+    ["lavender"]="#7287fd"
+    ["red"]="#d20f39"
+    ["subtext1"]="#5c5f77"
+    ["surface2"]="#acb0be"
+    ["surface0"]="#ccd0da"
+    ["yellow"]="#df8e1d"
   )
   ;;
 
 "frappe")
   declare -A THEME=(
-    ["background"]="#303446" # Base
-    ["foreground"]="#949cbb" # Overlay 2
-    ["black"]="#c6d0f5" # Text
-    ["blue"]="#8caaee" # Blue
-    ["cyan"]="#99d1db" # Sky
-    ["green"]="#a6d189" # Green
-    ["magenta"]="#f4b8e4" # Pink
-    ["red"]="#e78284" # Red
-    ["white"]="#232634" # Crust
-    ["yellow"]="#e5c890" # Yellow
-
-    ["bblack"]="#9699a3"
-    ["bblue"]="#34548a"
-    ["bcyan"]="#0f4b6e"
-    ["bgreen"]="#33635c"
-    ["bmagenta"]="#5a4a78"
-    ["bred"]="#8c4351"
-    ["bwhite"]="#343b58"
-    ["byellow"]="#8f5815"
-  )
+    ["base"]="#303446"
+    ["overlay2"]="#949cbb"
+    ["text"]="#c6d0f5"
+    ["blue"]="#8caaee"
+    ["sky"]="#99d1db"
+    ["green"]="#a6d189"
+    ["pink"]="#f4b8e4"
+    ["rosewater"]="#f2d5cf"
+    ["lavender"]="#babbf1"
+    ["red"]="#e78284"
+    ["subtext1"]="#b5bfe2"
+    ["surface2"]="#626880"
+    ["surface0"]="#414559"
+    ["yellow"]="#e5c890"
+      )
   ;;
 
 
 "Macchiato")
   declare -A THEME=(
-    ["background"]="#24273a" # Base
-    ["foreground"]="#939ab7" # Overlay 2
-    ["black"]="#cad3f5" # Text
-    ["blue"]="#8aadf4" # Blue
-    ["cyan"]="#91d7e3" # Sky
-    ["green"]="#a6da95" # Green
-    ["magenta"]="#f5bde6" # Pink
-    ["red"]="#ed8796" # Red
-    ["white"]="#181926" # Crust
-    ["yellow"]="#eed49f" # Yellow
-
-    ["bblack"]="#9699a3"
-    ["bblue"]="#34548a"
-    ["bcyan"]="#0f4b6e"
-    ["bgreen"]="#33635c"
-    ["bmagenta"]="#5a4a78"
-    ["bred"]="#8c4351"
-    ["bwhite"]="#343b58"
-    ["byellow"]="#8f5815"
+    ["base"]="#24273a"
+    ["overlay2"]="#939ab7"
+    ["text"]="#cad3f5"
+    ["blue"]="#8aadf4"
+    ["sky"]="#91d7e3"
+    ["green"]="#a6da95"
+    ["pink"]="#f5bde6"
+    ["rosewater"]="#f4dbd6"
+    ["lavender"]="#b7bdf8"
+    ["red"]="#ed8796"
+    ["subtext1"]="#b8c0e0"
+    ["surface2"]="#5b6078"
+    ["surface0"]="#363a4f"
+    ["yellow"]="#eed49f"
   )
   ;;
 
