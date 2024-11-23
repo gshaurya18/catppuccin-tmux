@@ -42,7 +42,7 @@ case $SELECTED_THEME in
   ;;
 
 
-"Macchiato")
+"macchiato")
   declare -A THEME=(
     ["base"]="#24273a"
     ["overlay2"]="#939ab7"
