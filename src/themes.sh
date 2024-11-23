@@ -90,6 +90,7 @@ case $SELECTED_THEME in
     ["lavender"]="#b4befe"
     ["red"]="#f38ba8"
     ["subtext1"]="#11111b"
+    ["surface0"]="#313244"
     ["yellow"]="#f9e2af"
 
     ["bblack"]="#313244"
