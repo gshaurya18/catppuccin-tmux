@@ -86,6 +86,7 @@ case $SELECTED_THEME in
     ["cyan"]="#89dceb" # Sky
     ["green"]="#a6e3a1"
     ["magenta"]="#f5c2e7"
+    ["rosewater"]="#f5e0dc"
     ["red"]="#f38ba8"
     ["white"]="#11111b"
     ["yellow"]="#f9e2af"
