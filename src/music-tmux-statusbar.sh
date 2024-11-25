@@ -5,7 +5,7 @@ ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/.."
 . "${ROOT_DIR}/lib/coreutils-compat.sh"
 
 # Check the global value
-SHOW_MUSIC=$(tmux show-option -gv @tokyo-night-tmux_show_music)
+SHOW_MUSIC=$(tmux show-option -gv @catppuccin-tmux_show_music)
 
 if [ "$SHOW_MUSIC" != "1" ]; then
   exit 0
@@ -17,8 +17,8 @@ source $CURRENT_DIR/themes.sh
 ACCENT_COLOR="${THEME[blue]}"
 SECONDARY_COLOR="${THEME[base]}"
 BG_COLOR="${THEME[base]}"
-BG_BAR="${THEME[base]}"
-TIME_COLOR="${THEME[subtext1]}"
+BG_BAR="${THEME[surface0]}"
+TIME_COLOR="${THEME[yellow]}"
 
 if [[ $1 =~ ^[[:digit:]]+$ ]]; then
   MAX_TITLE_WIDTH=$1
