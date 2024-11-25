@@ -6,7 +6,16 @@ The primary purpose of this repository is to take the visual outline of the toky
 
 ## Dependencies
 
-You will need to install the packages below for everything to work.
+1. You will need to have a [nerd font](https://www.nerdfonts.com/) installed (note the homebrew steps below do this for you)
+2. You will need to install the packages below for everything to work.
+
+### Mac
+
+```
+brew tap homebrew/cask-fonts
+brew install --cask font-monaspace-nerd-font font-noto-sans-symbols-2
+brew install bash bc coreutils gawk gh glab gsed jq nowplaying-cli
+```
 
 ### Linux
 
